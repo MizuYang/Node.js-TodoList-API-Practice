@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "2c7c6695-3c15-4062-b4d8-f90f9dbfbff0",
+		"name": "todo 練習1 - Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21269450"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mizu-todolist-1.herokuapp.com/todolist",
+					"protocol": "https",
+					"host": [
+						"mizu-todolist-1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todolist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"帶雨傘出門\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mizu-todolist-1.herokuapp.com/todolist",
+					"protocol": "https",
+					"host": [
+						"mizu-todolist-1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todolist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mizu-todolist-1.herokuapp.com/todolist",
+					"protocol": "https",
+					"host": [
+						"mizu-todolist-1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todolist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://mizu-todolist-1.herokuapp.com/todolist/xxx",
+					"protocol": "https",
+					"host": [
+						"mizu-todolist-1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todolist",
+						"xxx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://mizu-todolist-1.herokuapp.com/todolist/xxx",
+					"protocol": "https",
+					"host": [
+						"mizu-todolist-1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todolist",
+						"xxx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
